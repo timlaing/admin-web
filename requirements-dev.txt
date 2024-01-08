@@ -1,9 +1,9 @@
 
 -r requirements.txt
-Black
+black
 isort
 pre-commit
 pylance
-PyLint
-PyTest
-PyTest-Flask
+pylint[spelling]
+pytest
+pytest-flask

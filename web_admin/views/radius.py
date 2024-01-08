@@ -8,7 +8,7 @@ from ._base import Module
 
 
 @Module("Radius", "/radius/users/", "radius_users")
-class RadiusUsersView(MethodView):
+class RadiusUsersView(MethodView):  # pylint: disable=too-few-public-methods
     """View for listing Radius Users"""
 
     def get(self) -> ResponseReturnValue:

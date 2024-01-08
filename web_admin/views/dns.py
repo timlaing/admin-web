@@ -8,7 +8,7 @@ from ._base import Module
 
 
 @Module("DNS", "/dns/zones/", "dns_zones")
-class DnsZoneView(MethodView):
+class DnsZoneView(MethodView):  # pylint: disable=too-few-public-methods
     """View for listing DNS Zones"""
 
     def get(self) -> ResponseReturnValue:

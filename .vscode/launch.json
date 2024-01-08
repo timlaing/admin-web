@@ -10,7 +10,7 @@
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP": "web-admin/app.py",
+                "FLASK_APP": "web_admin/app.py",
                 "FLASK_DEBUG": "1"
             },
             "args": [

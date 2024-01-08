@@ -9,7 +9,7 @@ from ._base import Module
 
 
 @Module("Home", "/", "home", hide=True)
-class HomeView(MethodView):
+class HomeView(MethodView):  # pylint: disable=too-few-public-methods
     """View for listing home page"""
 
     def get(self) -> ResponseReturnValue:

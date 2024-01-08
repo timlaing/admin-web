@@ -8,7 +8,7 @@ from ._base import Module
 
 
 @Module("DHCP", "/dhcp/leases/", "dhcp_leases")
-class DHCPLeaseView(MethodView):
+class DHCPLeaseView(MethodView):  # pylint: disable=too-few-public-methods
     """View for listing DHCP Leases"""
 
     def get(self) -> ResponseReturnValue:

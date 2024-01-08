@@ -4,7 +4,7 @@ from flask import current_app as app
 from flask.views import MethodView
 
 
-class Module:
+class Module:  # pylint: disable=too-few-public-methods
     """Module decorator"""
 
     def __init__(

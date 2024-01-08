@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Main Application entry point"""
 from flask import Flask
 

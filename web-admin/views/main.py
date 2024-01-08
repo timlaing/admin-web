@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Module to handle home page functionality"""
 from flask import current_app as app
 from flask import render_template

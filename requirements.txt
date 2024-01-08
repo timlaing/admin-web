@@ -1,5 +1,5 @@
 Flask
+Flask-Bootstrap
 Flask-Session
 Flask-SimpleLogin
-Flask-Bootstrap
 Flask-Wtf

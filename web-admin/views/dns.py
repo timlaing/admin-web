@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Module to handle DNS functionality"""
 from flask import current_app as app
 from flask.typing import ResponseReturnValue

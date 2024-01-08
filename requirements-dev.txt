@@ -1,8 +1,9 @@
-Black
-PyTest
-PyLint
-isort
-PyTest-Flask
-pylance
 
 -r requirements.txt
+Black
+isort
+pre-commit
+pylance
+PyLint
+PyTest
+PyTest-Flask

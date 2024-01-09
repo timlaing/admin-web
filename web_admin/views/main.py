@@ -3,14 +3,17 @@
 from flask import current_app as app
 from flask import render_template
 from flask.typing import ResponseReturnValue
-from flask.views import MethodView
 
-from ._base import Module
+from ..utils.decorators import module_view
+from ..utils.views import BaseModuleView
 
 
-@Module("Home", "/", "home", hide=True)
-class HomeView(MethodView):  # pylint: disable=too-few-public-methods
+@module_view("/")
+class HomeView(BaseModuleView):  # pylint: disable=too-few-public-methods
     """View for listing home page"""
+
+    name = "Home"
+    view_name = "home"
 
     def get(self) -> ResponseReturnValue:
         """Lists the modules"""

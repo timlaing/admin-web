@@ -15,12 +15,17 @@ Modules
         <div
             class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
             <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#collection"></use>
+                <use xlink:href={{ module.icon }}></use>
             </svg>
         </div>
         <h3 class="fs-2">{{ module.name }}</h3>
         <p>{{ module.description }}</p>
-        <a href="{{ url_for( module.view )}}" class="icon-link d-inline-flex align-items-center">
+        <ul>
+            {% for sub_module in module.sub_modules %}
+            <li><a class="nav nav-link" href="{{ url_for( sub_module.view_name ) }}">{{ sub_module.name }}</a></li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for( module.view_name )}}" class="icon-link d-inline-flex align-items-center">
             Show
             <svg class="bi" width="1em" height="1em">
                 <use xlink:href="#chevron-right"></use>
